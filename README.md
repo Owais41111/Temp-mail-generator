@@ -20,7 +20,7 @@ TEMP-MAIL is a sleek, modern, and responsive web application for generating temp
 
 ## 🖼️ Demo
 
-> Check out a live preview here: [https://owais41111.github.io/Temp-mail-generator/]
+> Check out a live preview here:[Live Demo](https://owais41111.github.io/Temp-mail-generator/)
 
 ---
 
