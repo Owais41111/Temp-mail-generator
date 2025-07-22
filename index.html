@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TEMP-MAIL Header</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="Ej Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <span class="gradient-text">TEMP-MAIL</span>
+            </div>
+
+            <!-- Center Links -->
+            <div class="center-links">
+                <a href="#" class="link">
+                    <i data-lucide="smartphone" class="icon"></i>
+                    <span>App Store</span>
+                </a>
+                <a href="#" class="link">
+                    <i data-lucide="download" class="icon"></i>
+                    <span>Google Play</span>
+                </a>
+            </div>
+
+            <!-- Right Side -->
+            <div class="right-actions">
+                <button class="premium-btn">Premium</button>
+                <button id="toggleMode" aria-label="Toggle dark mode">🌙</button>
+
+                <div class="dropdown">
+                    <button class="dropdown-toggle">
+                        <span>Temp Mail</span>
+                        <i data-lucide="chevron-down" class="icon"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-item">Temp Mail Generator</div>
+                        <div class="dropdown-item">Inbox</div>
+                        <div class="dropdown-item">Settings</div>
+                        <div class="dropdown-item">Help</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="email-section">
+        <div class="email-header">
+            <h1>Your Temporary Email Address</h1>
+            <p>Use this disposable email to protect your privacy and avoid spam</p>
+        </div>
+
+        <!-- Email Display -->
+        <div class="email-card">
+            <div class="email-box">
+                <span id="emailText" class="email-address">gvaxd20987@fersco.com</span>
+            </div>
+
+            <div class="actions">
+                <button id="copyBtn" class="btn">
+                    <i data-lucide="copy" class="icon"></i>
+                    <span>Copy</span>
+                </button>
+                <button id="refreshBtn" class="btn">
+                    <i data-lucide="refresh-cw" class="icon"></i>
+                    <span>Refresh</span>
+                </button>
+                <button id="changeBtn" class="btn">
+                    <i data-lucide="settings" class="icon"></i>
+                    <span>Change</span>
+                </button>
+            </div>
+
+            <div class="info-box">
+                <p>📬 Your inbox auto-refreshes every 5 seconds</p>
+                <p>⏰ This email address is temporary and will expire after 60 minutes of inactivity</p>
+            </div>
+        </div>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+
+
+    <section class="panel-container">
+        <div class="tab-card">
+            <!-- Tabs -->
+            <div class="tabs-list">
+                <button class="tab-trigger active" data-tab="inbox">
+                    <i data-lucide="inbox" class="icon"></i>
+                    <span>Sender</span>
+                </button>
+                <button class="tab-trigger" data-tab="subject">
+                    <i data-lucide="mail-open" class="icon"></i>
+                    <span>Subject</span>
+                </button>
+                <button class="tab-trigger" data-tab="view">
+                    <i data-lucide="clock" class="icon"></i>
+                    <span>View</span>
+                </button>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="inbox" style="display: block;">
+                <div class="tab-body">
+                    <div class="icon-circle">
+                        <i data-lucide="inbox" class="icon-lg"></i>
+                    </div>
+                    <h3>Your inbox is empty</h3>
+                    <p>Waiting for incoming emails...</p>
+                    <div class="refresh-indicator">
+                        <div class="dot-pulse"></div>
+                        <span>Auto-refreshing inbox</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="subject">
+                <div class="tab-body">
+                    <div class="icon-circle">
+                        <i data-lucide="mail-open" class="icon-lg"></i>
+                    </div>
+                    <h3>No emails yet</h3>
+                    <p>Email subjects will appear here when messages arrive</p>
+                </div>
+            </div>
+
+            <div class="tab-content" id="view">
+                <div class="tab-body">
+                    <div class="icon-circle">
+                        <i data-lucide="clock" class="icon-lg"></i>
+                    </div>
+                    <h3>Message view</h3>
+                    <p>Email content will be displayed here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="educational-wrapper">
+        <div class="card-grid">
+
+            <!-- What is Disposable Email -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>What is Disposable Email?</h2>
+                    <p>
+                        A disposable email address is a temporary email service that allows you to receive emails
+                        without using your real email address. These temporary addresses automatically expire after a
+                        set period, protecting your privacy and keeping your main inbox clean.
+                    </p>
+                    <p>
+                        Perfect for one-time signups, testing services, or any situation where you need an email address
+                        but don't want to share your personal one.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Key Benefits -->
+            <div class="card">
+                <div class="card-content">
+                    <h2>Key Benefits</h2>
+                    <div class="benefits-list">
+                        <!-- Injected by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Common Use Cases -->
+            <div class="card full">
+                <div class="card-content">
+                    <h2 class="centered">Common Use Cases</h2>
+                    <div class="use-cases">
+                        <!-- Injected by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- How to Use -->
+            <div class="card full">
+                <div class="card-content">
+                    <h2>How to Use Disposable Email</h2>
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-icon">1</div>
+                            <div>
+                                <h3>Generate Your Temporary Email</h3>
+                                <p>Click refresh to generate a new temporary email address instantly. No registration
+                                    required.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">2</div>
+                            <div>
+                                <h3>Use It for Signups</h3>
+                                <p>Copy the email address and use it for any service requiring email verification.</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-icon">3</div>
+                            <div>
+                                <h3>Receive & View Messages</h3>
+                                <p>Check your inbox for incoming messages. The inbox auto-refreshes every few seconds.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+
+</html>
